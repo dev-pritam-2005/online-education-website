@@ -146,13 +146,59 @@ header .fa-bars{
     display: flex;
     text-align: center;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home .box-container .box{
+    height: 27rem;
+    width: 25rem;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+    /* margin: 20rem; */
+    margin: 2rem;
+    cursor: pointer;
+
+}
+.home .box-container .box i{
+height: 6rem;
+width: 6rem;
+text-align: center;
+line-height: 6rem;
+border-radius: 50%;
+background: var(--pink);
+font-size: 33px;
+margin: 20px 0;
+transition: 0.2s;
+}
+
+.home .box-container .box h3{
+    font-size: 20px;
+    color: var(--pink);
+    transition: 0.2s;
+
+}
+
+.home .box-container .box p{
+    font-size: 18px;
+    padding: 15px 26px;
+    color: #666;
 }
 
 
 
 
-
-
+.home::before{
+    content: '';
+    position: absolute;
+    bottom: -30%; left: 50%;
+    transform: translateX(-50%);
+    border-top: 70vh solid #ffffff;
+    width: 120%;
+    border-radius: 50%;
+    z-index: -1;
+}
 
 
 
@@ -201,10 +247,33 @@ header .fa-times{
         top:5.5rem;
         opacity: 1;
     }
+    .home .content .p{
+        padding: 1.5rem 2rem;
+    }
+    .home::before{
+        display: none;
+    }
+
+}
+
+
+
+
+.glow {
+  /* font-size: 80px; */
+  color: #fff;
+  /* text-align: center; */
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 9px #ffffff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #f8047e;
+  }
   
-
-
-
+  to {
+    text-shadow: 0 0 9px #ffffff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
 }
 
 
