@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@327&display=swap');
+:root{
+    --pink:#f6087f;
+    --violet:#C63BFA;
+    --blue: #3F00FF;
+}
+
+*{
+    font-family : "Open Sans", sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    margin: 0px; padding: 0px;
+    box-sizing: border-box;
+ }
+
+ *::selection{
+    background: var(--pink);
+    color: #fff; 
+ }
+
+ html{
+    font-size: 74.5%;
+    overflow-x: hidden;
+ }
+
+ body{
+    background-color: #333;
+    height: 3000px;
+ }
+
+
+header{
+    width:96%;
+    background-color: #0352d3e1;
+    position: fixed;
+    top:2rem; left:50%;
+    transform: translateX(-50%);
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 1000 ;
+    transition:0.2s ;
+}
+
+.header-active{
+    top: 0;
+    width:100%;
+    border-radius: 0;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+
+}
+
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+header .navbar ul li{
+    margin: 0 1rem;
+}
+
+header .navbar ul li a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--pink);
+}
+header .navbar ul li .active,
+header .navbar ul li a:hover{
+    color: var(--violet);
+}
+header .Logo{
+    font-size: 2.5rem;
+    color:var(--violet)
+
+}
+header .Logo i{
+  color:var(--pink);
+    padding :0.2rem;
+
+}
+
+header .fa-bars{
+    font-size: 2.3rem;
+    color:var(--pink);
+    cursor: pointer;
+    display:none;
+    transition: 0.2s;
+
+}
+.home{
+    min-height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.714)),url(../pictures/bg1.jpg) no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.home .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-top: 14rem;
+    padding-bottom: 8rem;
+    text-align: center;
+}
+
+.home .content h1{
+    font-size: 5rem;
+    color: #fff;
+    padding: 0 1rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+.home .content p{
+    font-size: 1.75rem;
+    color: #fff;
+    padding: 1rem 25rem;
+}
+.home .content  button{
+    height: 4rem;
+    width: 12rem;
+    border-radius: 5rem;
+    background: var(--blue);
+    color: #fff;
+    font-size: 15.5px;
+    cursor: pointer;
+    transition:0.2s;
+     border:none;
+    box-shadow: 0 .3rem 1rem rgba(228, 82, 82, 0.6);
+
+}
+.home .content  button:hover{
+    letter-spacing: 0.2rem;
+}
+
+.home .box-container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+header .fa-times{
+    transform: rotate(180deg);
+
+}
+
+/* media queries */
+
+@media(max-width:768px){
+    html{
+        font-size: 55%;
+    }
+    header .fa-bars{
+        display:block;
+
+    }
+
+    header .navbar {
+        position: fixed;
+        top:-100rem; left:0;
+        width:100%;
+        background: #fff;
+        border-radius: 1rem;
+        opacity: 0;
+        transition: 0.3s linear;
+    }
+
+    header .navbar ul{
+        flex-flow: column;
+        padding:2rem 0;
+    }
+    header .navbar ul li{
+        margin: 1rem 0;
+        width:100%;
+        text-align: center;
+    }
+    header .navbar ul li a{
+        font-size: 3rem;
+        display: block;
+    }
+    header .nav-toggle{
+        top:5.5rem;
+        opacity: 1;
+    }
+  
+
+
+
+}
+
+
+
+
+
+
+
