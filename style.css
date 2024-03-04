@@ -480,7 +480,7 @@ header .fa-bars {
 }
 
 .contact .row .form-container input:focus,textarea:focus{
-    border: 2rem solid var(--pink) ;
+    border: 0.2rem solid var(--pink) ;
 }
 
 .contact .row .form-container textarea{
@@ -506,17 +506,49 @@ header .fa-bars {
     border: .2rem solid var(--pink);
 }
 
+.footer{
+    text-align: center;
+    background-color: #fff6f6;
+}
+.footer .icons{
+    padding:  3rem 0 ;
+}
 
+.footer .icons a{
+height: 4.5rem;
+width: 4.5rem;
+line-height: 4.2rem;
+text-align: center;
+border-radius: 50%;
+color: var(--blue);
+border: .2rem solid var(--blue);
+font-size: 2rem ;
+margin: 0 .2rem;
+transition:  .2s linear;
 
+}
+.footer .icons a :hover{
+color: #ffffff;
+background:var(--blue) ;
+border-color:var(--blue) ;
 
+}
 
+.footer .credit{
+    font-size: 2.5rem;
+    border-top: .1rem solid #999;
+    margin: 0 auto;
+    margin-bottom: .5rem ;
+    color: #666;
+    width:90%;
+    padding: 1rem 0;
+    
+}
 
+.footer .credit span{
+color: var(--pink);
 
-
-
-
-
-
+}
 
 
 header .fa-times {
